@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot — Wajahat Irfan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chat with Wajahat's Bot</h1>
+      <p class="subtitle">A simple rule-based chatbot. It answers questions about Wajahat's skills, cybersecurity tips, and AI automation — no AI model, just keyword rules.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="chat-card">
+      <div class="chat-window" id="chatWindow" aria-live="polite">
+        <div class="message bot">
+          <p>Hi! I'm a small rule-based chatbot on Wajahat Irfan's website. Ask me about his <strong>skills</strong>, <strong>cybersecurity tips</strong>, <strong>AI automation</strong>, or his <strong>LinkedIn</strong> and <strong>GitHub</strong> links. Try "What are your skills?"</p>
+        </div>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <label class="sr-only" for="chatInput">Type your message</label>
+        <input type="text" id="chatInput" placeholder="Type a message…" autocomplete="off" maxlength="300">
+        <button type="submit" class="btn">Send</button>
+      </form>
+
+      <div class="quick-replies">
+        <button type="button" class="chip" data-question="What are Wajahat's skills?">Skills</button>
+        <button type="button" class="chip" data-question="Give me a cybersecurity tip">Cybersecurity tip</button>
+        <button type="button" class="chip" data-question="What is AI automation?">AI automation</button>
+        <button type="button" class="chip" data-question="Where can I find Wajahat online?">Links</button>
+      </div>
+    </section>
+
+    <p class="note">This is a student project: a rule-based demo that matches keywords. It does not use a real AI model and does not send your messages anywhere.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Wajahat Irfan — student project.</p>
+    </div>
+  </footer>
+
+  <script src="chat.js"></script>
+</body>
+</html>
